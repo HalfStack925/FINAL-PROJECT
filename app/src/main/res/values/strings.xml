@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Weather Now</string>
+    <string name="searchBanner">Look up Current Weather Conditions</string>
+    <string name="current">Current Location</string>
+    <string name="search">Search</string>
+    <string name="city">City</string>
+    <string-array name="states">
+        <item>State</item>
+        <item>AL</item>
+        <item>AK</item>
+        <item>AS</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>DC</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>GU</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>MP</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>PR</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>VI</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+    <string name="hourly">Hourly Forecast</string>
+    <string name="fiveday">5 Day Forecast</string>
+    <string name="radar">Live Radar</string>
+    <string name="txtDate">Wed, April 28, 2021</string>
+    <string name="txtTime">8:00am</string>
+    <string name="txtTemp">60°</string>
+    <string name="txtWaring">Text will show if there is a warning</string>
+    <string name="txtHourByHour">7:00am</string>
+    <string name="txtCondition">Current Condition</string>
+    <string name="txtHourbyHourTemp">60°</string>
+    <string name="txtHumidity">Humidity</string>
+    <string name="txtCurrentHumidity">44</string>
+    <string name="txtLowTemp">Low</string>
+    <string name="txtCurrentLow">25°</string>
+    <string name="txtHighTemp">High</string>
+    <string name="txtCurrentHigh">75°</string>
+
+</resources>
