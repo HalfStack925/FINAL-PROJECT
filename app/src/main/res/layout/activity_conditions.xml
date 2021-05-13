@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="64dp"
         android:gravity="center"
         android:text="@string/txtDate"
         android:textColor="@color/white" />
@@ -24,19 +24,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtDate"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="2dp"
         android:gravity="center"
         android:text="@string/txtTime"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/txtTemp"
+        android:id="@+id/txtCurrentTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtCurrentTime"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
         android:gravity="center"
         android:text="@string/txtTemp"
         android:textColor="@color/white"
@@ -46,7 +49,7 @@
         android:id="@+id/txtWarning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtTemp"
+        android:layout_below="@id/txtCurrentTemp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
         android:gravity="center"
@@ -54,134 +57,137 @@
         android:textColor="@color/white"
         android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/txtHumidityTitle"
-        android:layout_width="wrap_content"
+    <TableRow
+        android:id="@+id/rowTitles"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtWarning"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/txtHumidity"
-        android:textColor="@color/white" />
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="278dp">
 
-    <ImageView
-        android:id="@+id/imgDuePoint"
-        android:layout_width="91dp"
-        android:layout_height="76dp"
-        android:layout_below="@id/txtHumidityTitle"
+        <TextView
+            android:id="@+id/txtHumidityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/txtHumidity"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtLowTempTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="87dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="30dp"
+
+            android:text="@string/txtLowTemp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtHighTempTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="87dp"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="31dp"
+            android:text="@string/txtHighTemp"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="6dp"
-        android:contentDescription="TODO"
-        android:src="@drawable/duepoint" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="125dp">
 
-    <TextView
-        android:id="@+id/txtCurrentHumidity"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imgDuePoint"
+        <TextView
+            android:id="@+id/txtCurrentHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/txtCurrentHumidity"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtCurrentLowTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="192dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/txtCurrentLow"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtCurrentHighTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_marginStart="87dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txtCurrentHigh"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowImages"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="9dp"
-        android:text="@string/txtCurrentHumidity"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="160dp">
 
-    <TextView
-        android:id="@+id/txtLowTempTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtWarning"
-        android:layout_marginStart="81dp"
-        android:layout_marginLeft="81dp"
-        android:layout_marginTop="30dp"
+        <ImageView
+            android:id="@+id/imgDuePoint"
+            android:layout_width="98dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/duepoint" />
 
-        android:layout_toEndOf="@id/txtHumidityTitle"
-        android:layout_toRightOf="@id/txtHumidityTitle"
-        android:text="@string/txtLowTemp"
-        android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/imgLowTemp"
+            android:layout_width="103dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="25dp"
 
-    <ImageView
-        android:id="@+id/imgLowTemp"
-        android:layout_width="91dp"
-        android:layout_height="76dp"
-        android:layout_above="@id/txtCurrentLowTemp"
-        android:layout_below="@id/txtLowTempTitle"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/lowtemp" />
 
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="8dp"
-        android:layout_toEndOf="@id/imgDuePoint"
-        android:layout_toRightOf="@id/imgDuePoint"
-        android:src="@drawable/lowtemp" />
-
-    <TextView
-        android:id="@+id/txtCurrentLowTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imgDuePoint"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="192dp"
-        android:layout_marginLeft="192dp"
-        android:layout_marginTop="9dp"
-        android:text="@string/txtCurrentLow"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/txtHighTempTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtWarning"
-        android:layout_marginStart="87dp"
-        android:layout_marginLeft="87dp"
-        android:layout_marginTop="31dp"
-        android:layout_toEndOf="@id/txtLowTempTitle"
-        android:layout_toRightOf="@id/txtLowTempTitle"
-        android:text="@string/txtHighTemp"
-        android:textColor="@color/white" />
-
-    <ImageView
-        android:id="@+id/imgHighTemp"
-        android:layout_width="88dp"
-        android:layout_height="67dp"
-        android:layout_above="@id/txtCurrentHighTemp"
-        android:layout_below="@id/txtHighTempTitle"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="9dp"
-        android:layout_toEndOf="@id/imgLowTemp"
-        android:layout_toRightOf="@id/imgLowTemp"
-        android:src="@drawable/hightemp" />
-
-    <TextView
-        android:id="@+id/txtCurrentHighTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/imgDuePoint"
-
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="82dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/txtCurrentLowTemp"
-        android:text="@string/txtCurrentHigh"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:layout_marginStart="82dp"
-        android:layout_toEndOf="@id/txtCurrentLowTemp" />
+        <ImageView
+            android:id="@+id/imgHighTemp"
+            android:layout_width="99dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="9dp"
+            android:src="@drawable/hightemp" />
+    </TableRow>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"

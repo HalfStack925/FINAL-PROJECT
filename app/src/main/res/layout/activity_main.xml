@@ -11,41 +11,49 @@
     tools:context=".MainActivity">
 
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="352dp"
-        android:layout_height="72dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="180dp"
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/racing_sans_one"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="#042069"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/rdCurrent"
-            android:layout_width="229dp"
-            android:layout_height="wrap_content"
-            android:text="@string/current"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="206dp" />
-
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/txtSearchCity" />
 
     <TextView
-        android:id="@+id/txtSearchBanner"
+        android:id="@+id/txtTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="538dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSearchCity"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="296dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/searchCity"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/racing_sans_one"
         android:gravity="center"
         android:text="@string/searchBanner"
@@ -55,65 +63,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txtCitySearch"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/city"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
-
     <Spinner
         android:id="@+id/spnStates"
-        android:layout_width="118dp"
-        android:layout_height="62dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginRight="224dp"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
         android:entries="@array/states"
-        android:fadeScrollbars="false"
-        android:gravity="center_horizontal"
-        android:isScrollContainer="true"
-        android:scrollbars="vertical"
-        android:spinnerMode="dialog"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCitySearch" />
-
-    <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:fontFamily="@font/racing_sans_one"
-        android:text="@string/search"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:backgroundTint="#042069"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnStates" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSearchCity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
